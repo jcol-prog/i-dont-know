@@ -3,63 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Projeto Front-End | Alura</title>
+    <title>DevPortfolio | Front-End & UX</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="#inicio">Início</a>
-            <a class="cabecalho__menu__link" href="#sobre">Sobre</a>
-            <a class="cabecalho__menu__link" href="#projetos">Projetos</a>
-        </nav>
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="logo">&lt;Dev<span>Front</span>/&gt;</a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link active">Início</a></li>
+                    <li><a href="#sobre" class="nav__link">Sobre</a></li>
+                    <li><a href="#habilidades" class="nav__link">Habilidades</a></li>
+                    <li><a href="#projetos" class="nav__link">Projetos</a></li>
+                    <li><a href="#contato" class="nav__link">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="btn-theme" id="theme-toggle" aria-label="Alternar tema">
+                <i class="fa-solid me-moon"></i>
+            </button>
+        </div>
     </header>
 
-    <main class="conteudo">
-
-        <section class="conteudo__apresentacao" id="inicio">
-            <div class="conteudo__apresentacao__texto">
-                <h1 class="conteudo__apresentacao__titulo">
-                    Eleve seu negócio digital a outro nível <strong class="titulo-destaque">com um Front-end de qualidade!</strong>
-                </h1>
-                <p class="conteudo__apresentacao__paragrafo">
-                    Olá! Sou um desenvolvedor em formação. Ajudo a estruturar páginas web com HTML, CSS e interatividade em JavaScript com foco em acessibilidade e UX.
-                </p>
-                <div class="conteudo__apresentacao__botoes">
-                    <a class="botao" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <a class="botao" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <span class="tag">Desenvolvedor Front-End</span>
+                    <h1 class="hero__title">Transformando ideias em <span>experiências digitais</span> de alto impacto.</h1>
+                    <p class="hero__subtitle">Especialista em construir interfaces modernas, acessíveis, responsivas e focadas na melhor experiência do usuário.</p>
+                    <div class="hero__buttons">
+                        <a href="#projetos" class="btn btn--primary">Ver Projetos <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#contato" class="btn btn--outline">Entrar em Contato</a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <div class="image-wrapper">
+                        <img src="https://via.placeholder.com/450x500" alt="Foto do Desenvolvedor">
+                    </div>
                 </div>
             </div>
-            <img class="conteudo__apresentacao__imagem" src="imagem.png" alt="Foto do desenvolvedor criando código">
         </section>
 
-        <hr>
-
-        <section class="conteudo__projetos" id="projetos">
-            <h2 class="conteudo__projetos__titulo">O que estamos construindo</h2>
-            <div class="conteudo__projetos__cards">
-                <article class="card">
-                    <h3>Desenvolvimento Web</h3>
-                    <p>Estruturação semântica com HTML5 e layouts responsivos utilizando Flexbox.</p>
-                </article>
-                <article class="card">
-                    <h3>Interatividade</h3>
-                    <p>Manipulação do DOM e lógica de programação com JavaScript.</p>
-                </article>
-                <article class="card">
-                    <h3>UX & Acessibilidade</h3>
-                    <p>Criação de páginas acessíveis, inclusivas e de alto impacto social.</p>
-                </article>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="rodape">
-        <p>Desenvolvido por Aluno durante o curso da Alura &copy; 2026</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+        <section id="habilidades" class="skills section">
+            <div class="container">
+                <h2 class="section__title">Minhas <span>Especialidades</span></h2>
+                <div class="skills__grid">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-html5 skill-card__icon"></i>
+                        <h3>HTML5 Semântico</h3>
+                        <p>Estruturação limpa, otimizada para SEO e focada em acessibilidade (WCAG).</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-css3-alt skill-card__icon"></i>
+                        <h3>CSS3 & Flexbox/Grid</h3>
+                        <p>Layouts responsivos, animações fluidas e estilização modular com variáveis.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-square-js skill-card__icon"></i>
+                        <h3>JavaScript Moderno</h3>
+                        <p>Manipulação do DOM, requisições assíncronas (APIs) e lógica interativa.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-universal-access skill-card__icon"></i>
+                        <h3>UX & Acessibilidade</h3>
+                        <p>Design centrado no usuário, testes
